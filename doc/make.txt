@@ -1,0 +1,30 @@
+*make.txt* Plugin for compiling project based on files in root of mercurial or git repository
+
+==============================================================================
+Contents                                          *vim-make* *vim-make-contents*
+
+         1. Intro ........................... |vim-make-intro|
+         1. Key mappings .................... |vim-make-mappings|
+
+==============================================================================
+1. Intro                                                      *vim-make-intro*
+
+Typically, I have a Makefile in the root of my hg/git repositories for c++
+projects, and build.xml for in the root of my java projects.  The RootBuild
+command will examine the root, run the appropriate |compile| command, and then
+run |make|.
+
+
+==============================================================================
+1. Mappings                                                *vim-make-mappings*
+
+I suggest the following mapping in your .vimrc.
+>
+    nmap g<C-k> :RootBuild<CR>
+<
+
+==============================================================================
+1. Credit                                                    *vim-make-credit*
+
+vim-make was developed by Chad Skeeters <github.com/cskeeters>.
+Distributed under Vim's |license|.
