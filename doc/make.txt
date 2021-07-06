@@ -28,3 +28,5 @@ I suggest the following mapping in your .vimrc.
 
 vim-make was developed by Chad Skeeters <github.com/cskeeters>.
 Distributed under Vim's |license|.
+
+ vim:tw=78:ts=8:ft=help:norl:
