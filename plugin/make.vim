@@ -14,11 +14,11 @@ function! s:RootBuild()
     " Call make after setting compiler appropriately
     if filereadable("Makefile")
         echom "make"
-        compiler gcc
+        compiler! gcc
         make
     endif
     if filereadable("build.xml")
-        compiler ant
+        compiler! ant
         make
     endif
 endfunction
